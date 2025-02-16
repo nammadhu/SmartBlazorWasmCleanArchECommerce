@@ -83,7 +83,7 @@ namespace BlazorEcommerce.Infrastructure.Services.PaymentService
                         secret
                     );
 
-                if (stripeEvent.Type == Events.CheckoutSessionCompleted)
+                if (stripeEvent.Type == EventTypes.CheckoutSessionCompleted)
                 {
                     return new DataResponse<string?>(null);
                 }
